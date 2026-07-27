@@ -1,0 +1,51 @@
+name: Paper Digest
+
+on:
+  schedule:
+    # Ogni lunedì alle 06:00 UTC (~08:00 CET). Modifica il cron per cambiare frequenza/orario.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}   # ti permette anche di lanciarlo manualmente da GitHub
+
+permissions:
+  contents: write   # serve per committare la dashboard e lo stato aggiornati
+
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch arXiv papers
+        run: python scripts/fetch_arxiv.py
+
+      - name: Fetch Hugging Face daily papers
+        run: python scripts/fetch_hf_papers.py
+
+      - name: Build digest + dashboard
+        run: python scripts/build_digest.py
+
+      - name: Send email (solo se ci sono paper nuovi)
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: python scripts/send_email.py
+
+      - name: Commit dashboard e stato aggiornati
+        run: |
+          git config user.name "paper-digest-bot"
+          git config user.email "actions@github.com"
+          git add docs/ data/seen_ids.json
+          git diff --staged --quiet || git commit -m "Aggiornamento automatico digest [skip ci]"
+          git push

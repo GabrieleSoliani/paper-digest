@@ -1,0 +1,51 @@
+# ============================================================
+# Configurazione del Paper Digest
+# Modifica liberamente keyword e categorie qui sotto.
+# ============================================================
+
+# Categorie arXiv da monitorare (vedi https://arxiv.org/category_taxonomy)
+arxiv_categories:
+  - cs.CV      # Computer Vision
+  - cs.RO      # Robotics
+  - cs.LG      # Machine Learning
+  - cs.AI      # Artificial Intelligence
+
+# Quante entry al massimo scaricare per categoria ad ogni run (le più recenti)
+arxiv_max_results_per_category: 100
+
+# Keyword di interesse: un paper viene incluso se una di queste
+# compare (case-insensitive) nel titolo o nell'abstract.
+# Puoi aggiungere/togliere liberamente termini, modelli, acronimi.
+keywords:
+  - SAM
+  - segment anything
+  - DINO
+  - DINOv2
+  - RoMa
+  - StableNormal
+  - anomalib
+  - anomaly detection
+  - VLA
+  - vision-language-action
+  - VLM
+  - vision-language model
+  - LLM
+  - robot learning
+  - imitation learning
+  - reinforcement learning
+  - manipulation
+  - diffusion policy
+  - foundation model
+  - 3D reconstruction
+  - depth estimation
+  - point cloud
+  - SLAM
+  - sensor fusion
+  - embodied AI
+  - humanoid
+
+# Numero massimo di paper mostrati nel digest finale (i più rilevanti)
+max_papers_in_digest: 40
+
+# Hugging Face Daily Papers: quanti giorni indietro guardare
+hf_days_back: 7
