@@ -33,6 +33,16 @@ jobs:
       - name: Build digest + dashboard
         run: python scripts/build_digest.py
 
+      # Il commit precede l'email: così la dashboard viene pubblicata anche se
+      # l'invio SMTP fallisce (credenziali scadute, provider irraggiungibile...).
+      - name: Commit dashboard e stato aggiornati
+        run: |
+          git config user.name "paper-digest-bot"
+          git config user.email "actions@github.com"
+          git add docs/ data/seen_ids.json
+          git diff --staged --quiet || git commit -m "Aggiornamento automatico digest [skip ci]"
+          git push
+
       - name: Send email (solo se ci sono paper nuovi)
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -41,11 +51,3 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
         run: python scripts/send_email.py
-
-      - name: Commit dashboard e stato aggiornati
-        run: |
-          git config user.name "paper-digest-bot"
-          git config user.email "actions@github.com"
-          git add docs/ data/seen_ids.json
-          git diff --staged --quiet || git commit -m "Aggiornamento automatico digest [skip ci]"
-          git push

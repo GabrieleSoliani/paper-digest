@@ -35,6 +35,13 @@ def build_email_html(papers: list[dict]) -> str:
     </body></html>"""
 
 
+REQUIRED_VARS = ("SMTP_HOST", "SMTP_USER", "SMTP_PASSWORD", "RECIPIENT_EMAIL")
+
+
+def missing_config() -> list[str]:
+    return [v for v in REQUIRED_VARS if not os.environ.get(v)]
+
+
 def send(html: str):
     host = os.environ["SMTP_HOST"]
     port = int(os.environ.get("SMTP_PORT", 587))
@@ -60,6 +67,11 @@ if __name__ == "__main__":
 
     if not papers:
         print("Nessun paper nuovo: email non inviata.")
+    elif missing_config():
+        print(
+            "Secret email non configurati "
+            f"({', '.join(missing_config())}): email saltata, dashboard aggiornata comunque."
+        )
     else:
         html = build_email_html(papers)
         send(html)
