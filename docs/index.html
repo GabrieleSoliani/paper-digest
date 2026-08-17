@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paper Digest — aggiornato 2026-08-10 06:27 UTC</title>
+<title>Paper Digest — aggiornato 2026-08-17 06:39 UTC</title>
 <style>
   :root {
     --bg: #0f1115; --card: #171a21; --text: #e8e8ea; --muted: #9a9fa8;
@@ -43,290 +43,291 @@
 <body>
   <header>
     <h1>📡 Il mio Paper Digest</h1>
-    <p class="updated">Ultimo aggiornamento: 2026-08-10 06:27 UTC · 40 paper</p>
+    <p class="updated">Ultimo aggiornamento: 2026-08-17 06:39 UTC · 40 paper</p>
   </header>
   <input id="search" type="text" placeholder="Filtra per parola chiave (es. VLA, SAM, robot)...">
   <div class="grid" id="grid">
     
         <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.12743" target="_blank" rel="noopener">Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence</a></h2>
+          <p class="authors">Haokai Zhang, Yuhang Ding, Yunshu Zhou, Xinze Du et al.</p>
+          <p class="summary">Spatial intelligence is becoming a foundation for embodied agents, robotic planning, and multimodal assistants. To improve the spatial reasoning ability of VLM agents, existing work has mainly followed two lines. One line uses post-training methods, such as supervised fine-tuning and reinforcement learning. Another lin...</p>
+          <div class="meta">score: 6.0 · 2026-08-13</div>
+        </article>
+        <article class="card">
           <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05042v1" target="_blank" rel="noopener">BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation</a></h2>
-          <p class="authors">Peiyan Li, Yuze Zhu, Yixiang Chen, Qisen Ma et al.</p>
-          <p class="summary">Leveraging pre-trained vision-language models (VLMs) to construct vision-language-action (VLA) models has emerged as a promising paradigm for 3D robot manipulation. However, existing 3D VLA methods remain data-hungry, exhibit limited generalization under distribution shifts, and lack explicit memory of past observation...</p>
-          <div class="meta">score: 7 · 2026-08-05</div>
+          <h2><a href="https://arxiv.org/abs/2608.11769v1" target="_blank" rel="noopener">Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence</a></h2>
+          <p class="authors">Chaeyeon Jung, Juyoun Park</p>
+          <p class="summary">Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We ch...</p>
+          <div class="meta">score: 6 · 2026-08-12</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.11739v1" target="_blank" rel="noopener">G0.5: One Autoregressive Stream for Robot Reasoning and Action</a></h2>
+          <p class="authors">Yicheng Liu, Zibin Dong, Baijun Ye, Tianyuan Yuan et al.</p>
+          <p class="summary">The prevailing recipe for Vision-Language-Action (VLA) models couples a pretrained VLM with a separately trained flow-matching action expert. This makes the VLM a context encoder rather than a decision-maker. We introduce G0.5, a pretrained autoregressive VLA in which a single transformer decoder emits reasoning and ac...</p>
+          <div class="meta">score: 6 · 2026-08-12</div>
         </article>
         <article class="card">
           <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2607.29613" target="_blank" rel="noopener">WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning</a></h2>
-          <p class="authors">Senyu Fei, Xiaopeng Yu, Siyin Wang, Xianzhong Zhao et al.</p>
-          <p class="summary">Reinforcement learning (RL) post-training of Vision-Language-Action (VLA) models has shown strong promise for robotic manipulation. Among RL methods, critic-based approaches rely on a value estimator that predominantly operates on single-frame observations or single-frame VLM backbone latents, which is a fundamental mi...</p>
-          <div class="meta">score: 7.0 · 2026-07-31</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.06374v1" target="_blank" rel="noopener">DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation</a></h2>
-          <p class="authors">Junfeng Li, Junjie He, Zhide Zhong, Yangyang Zheng et al.</p>
-          <p class="summary">Vision-Language-Action (VLA) models have become a powerful paradigm for robot manipulation, but training a single generalist policy for heterogeneous robot embodiments remains an open problem. Existing methods have two main limitations. First, they underuse dynamics priors shared across diverse visual and interaction d...</p>
-          <div class="meta">score: 6 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05999v1" target="_blank" rel="noopener">Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation</a></h2>
-          <p class="authors">He Kong, Zengjue Chen, Qi Wang, Qianli Xing et al.</p>
-          <p class="summary">Vision-language-action (VLA) models have demonstrated remarkable capabilities in robotic manipulation by leveraging pretrained vision-language models. However, existing post-training methods predominantly optimize VLA models as flat policies, making it difficult to explicitly model task progression and perform robust l...</p>
-          <div class="meta">score: 6 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05970v1" target="_blank" rel="noopener">SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation</a></h2>
-          <p class="authors">Changyuan Wang, Chubin Zhang, Zhenyu Wu, Runhao Li et al.</p>
-          <p class="summary">Embodied visuomotor models, including Diffusion Policy (DP) and Vision-Language-Action (VLA) models, have demonstrated promising performance on robotic manipulation benchmarks. However, their potential remains fundamentally constrained by the scarcity of large-scale embodied trajectory datasets, leading to insufficient...</p>
-          <div class="meta">score: 6 · 2026-08-06</div>
+          <h2><a href="https://huggingface.co/papers/2608.09853" target="_blank" rel="noopener">RynnValue: Scaling Robotic Value Foundation Models with Temporal Distance</a></h2>
+          <p class="authors">Dongchi Huang, Hongyin Zhang, Bohan Hou, Siteng Huang et al.</p>
+          <p class="summary">General-purpose reward models are increasingly the bottleneck for scaling robot learning, yet the recipe for learning value-related capabilities from large-scale heterogeneous corpora remains underexplored. Existing approaches tie supervision to task-internal anchors such as preferences or normalized progress, none of ...</p>
+          <div class="meta">score: 6.0 · 2026-08-10</div>
         </article>
         <article class="card">
           <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.03632" target="_blank" rel="noopener">When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation</a></h2>
-          <p class="authors">Yinuo Jiang, Yongjie Ye, Zhou Tao, Xiang Zhuang et al.</p>
-          <p class="summary">On-Policy distillation (OPD) transfers teacher capabilities by supervising student-sampled trajectories with dense token-level teacher signals. Recent selective OPD methods improve this process by prioritizing signals that are confident, informative, or learnable. However, the assumptions overlook a fundamental failure...</p>
-          <div class="meta">score: 6.0 · 2026-08-04</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.01755" target="_blank" rel="noopener">Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs</a></h2>
-          <p class="authors">Zixuan Huang, Yang Zhou, Kaixuan Wang, Guli Zhang et al.</p>
-          <p class="summary">Recent Vision-Language-Action (VLA) models for autonomous driving (AD) increasingly utilize chain-of-thought (CoT) supervision to enhance the reasoning capabilities of their Vision-Language Model (VLM) components, yet existing annotation pipelines commonly expose the teacher model to the logged ground-truth (GT) future...</p>
-          <div class="meta">score: 6.0 · 2026-08-03</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.AI</div>
-          <h2><a href="https://arxiv.org/abs/2608.07427v1" target="_blank" rel="noopener">A Picture is Worth a Thousand Tokens: How Vision Language Models Cut AI Energy Costs While Improving Accuracy</a></h2>
-          <p class="authors">Bhavika Jalli, Nikhil Korati Prasanna, Jayanta Choudhury</p>
-          <p class="summary">LLM inference accounts for over 90% of AI operational energy, scaling directly with input token count---a critical inefficiency for telecom network analytics and numerical time-series data analysis (NTSDA), where raw multivariate KPI windows from 4G/5G cell sites expand into thousands of floating-point tokens. Vision-L...</p>
-          <div class="meta">score: 5 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.07314v1" target="_blank" rel="noopener">TEMPO: Semantic-Action Decoupled RL Post-Training for Vision-Language-Action Models</a></h2>
-          <p class="authors">Ziheng Liu, Quantao Yang</p>
-          <p class="summary">Vision-language-action (VLA) models are commonly adapted to downstream manipulation tasks via supervised fine-tuning (SFT) or online reinforcement learning (RL) post-training. SFT is prone to distribution mismatch, and existing RL approaches typically apply a single, uniform update strategy to all model components, ign...</p>
-          <div class="meta">score: 5 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.07267v1" target="_blank" rel="noopener">WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN</a></h2>
-          <p class="authors">Yuehao Huang, Yunzi Wu, Xiaotao Zhang, Xinhai Li et al.</p>
-          <p class="summary">Recent vision-language navigation (VLN) systems increasingly adapt pretrained vision-language models (VLMs) into vision-language-action (VLA) policies that map egocentric observations and language instructions directly to navigation actions. Although semantically capable, such action-centric training does not explicitl...</p>
-          <div class="meta">score: 5 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.06901v1" target="_blank" rel="noopener">Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models</a></h2>
-          <p class="authors">Minseok Kang, Hyunwoo Kim, Chanyoung Kim, Minwoo Kim et al.</p>
-          <p class="summary">Vision-language models (VLMs) have achieved remarkable generalization across diverse multimodal tasks through large-scale pre-training, yet their rapidly increasing computational and memory requirements pose significant challenges for deployment in constrained environments. Existing pruning strategies often depend on t...</p>
-          <div class="meta">score: 5 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.06729v1" target="_blank" rel="noopener">AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models</a></h2>
+          <h2><a href="https://huggingface.co/papers/2608.06729" target="_blank" rel="noopener">AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models</a></h2>
           <p class="authors">Guiyu Zhao, Longteng Guo, Yanghong Mei, Zilin Zhu et al.</p>
           <p class="summary">While Vision-Language-Action (VLA) models have advanced embodied AI, their fundamentally reactive paradigm severely limits performance in partially observable and long-horizon tasks. When restricted to a single wrist-mounted camera, they inevitably suffer from perception forgetting as objects exit the field of view, an...</p>
-          <div class="meta">score: 5 · 2026-08-07</div>
+          <div class="meta">score: 6.0 · 2026-08-07</div>
         </article>
         <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.06375v1" target="_blank" rel="noopener">$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation</a></h2>
-          <p class="authors">Zhe Li, Zhenzhe Zhang, Yangyang Wei, Wenjie Zhang et al.</p>
-          <p class="summary">Humanoid household tasks often require concurrent loco-manipulation, where the robot must move, adjust posture, maintain balance, and manipulate objects as a single coordinated behavior. Yet existing humanoid policies typically decompose locomotion and manipulation, while recent world-action models remain either arm-ce...</p>
-          <div class="meta">score: 5 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.06060" target="_blank" rel="noopener">Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval</a></h2>
-          <p class="authors">Zelong Sun, Jun Wang, Kaicheng Yang, Tiancheng Gu et al.</p>
-          <p class="summary">Unified multimodal retrieval aims to identify candidates that satisfy complex user intent expressed through heterogeneous inputs. Although Large Vision-Language Model (LVLM)-based retrievers are efficient and scalable, directly encoding raw multimodal inputs often misses fine-grained discriminative cues, leading to con...</p>
-          <div class="meta">score: 5.0 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05369v1" target="_blank" rel="noopener">World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation</a></h2>
-          <p class="authors">Yuhao Pan, Haosong Peng, Zhengshen Zhang, Zhengyang Yan et al.</p>
-          <p class="summary">Vision-language-action (VLA) models often treat main-view and wrist-view observations as parallel visual inputs, overlooking their distinct roles in robot manipulation. Fine-grained manipulation, however, benefits from anticipating how wrist-local interactions may evolve under the global task context. To address this l...</p>
-          <div class="meta">score: 5 · 2026-08-05</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.04765v1" target="_blank" rel="noopener">Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models</a></h2>
-          <p class="authors">Houze Xu, Jizhong Li, Ziyi Ye</p>
-          <p class="summary">Vision-language-action (VLA) models provide a unified paradigm for connecting visual perception, language understanding, and robotic control. However, existing VLA models still face major challenges in long-horizon tasks: sparse expert demonstrations constrain cross-task compositional generalization; the non-Markovian ...</p>
-          <div class="meta">score: 5 · 2026-08-05</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.04574" target="_blank" rel="noopener">When Memory Lies: An Empirical Study of Spatial Memory Staleness in VLM Agents</a></h2>
-          <p class="authors">Yushi Sun, Yanjie Zhang</p>
-          <p class="summary">Memory-augmented VLM agents act on persistent spatial knowledge, yet that knowledge silently goes stale as the environment changes. We ask what happens when an agent must reconcile a confident memory claim with a contradicting observation, and whether current models can catch the conflict before it becomes a safety-rel...</p>
-          <div class="meta">score: 5.0 · 2026-08-05</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.05108" target="_blank" rel="noopener">Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming</a></h2>
-          <p class="authors">Yanting Wang, Chenlong Yin, Runpeng Geng, Jinyuan Jia</p>
-          <p class="summary">Prompt injection poses significant security risks to LLM agents. Efficient and effective red-teaming is therefore critical, both for evaluating these risks and for collecting training data to improve defenses. Existing state-of-the-art prompt injection red-teaming methods primarily rely on reinforcement learning (RL), ...</p>
-          <div class="meta">score: 5.0 · 2026-08-05</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.01851" target="_blank" rel="noopener">Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills</a></h2>
-          <p class="authors">Gaytri Jena, Kapil Wanaskar, Vinija Jain, Aman Chadha et al.</p>
-          <p class="summary">Robot learning is splitting into two bets: policies that bake competence into frozen weights (vision-language-action, or VLA, models), and agents that write and refine their own executable skills as code. This survey organises the field around that axis of weights versus skills. Its central analytical contribution is a...</p>
-          <div class="meta">score: 5.0 · 2026-08-03</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.02218" target="_blank" rel="noopener">PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs</a></h2>
-          <p class="authors">Haojie Hu, Chenhao Dang, Yaojia Liu, Hengrui Kang et al.</p>
-          <p class="summary">Scientific poster construction compresses a long multimodal paper into a readable, editable canvas. Existing systems hide request-level failures by scoring only completed outputs; direct image generation is not element-editable, while coding-agent workflows are costly. PosterMELD is a template-conditioned multi-agent p...</p>
-          <div class="meta">score: 5.0 · 2026-08-03</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.00782" target="_blank" rel="noopener">Distill Where You Fail: Recovering Learning Signals of Negative RL-Groups from Adaptive Teacher Guidance</a></h2>
-          <p class="authors">Zhuowen Han, Jinwei Xiao, Zhengxi Lu, Renren Jin et al.</p>
-          <p class="summary">Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models (LLMs). While Group Relative Policy Optimization (GRPO) is widely adopted, it suffers from sparse reward signals and loses gradients entirely when all responses within a group receive identical r...</p>
-          <div class="meta">score: 5.0 · 2026-08-01</div>
-        </article>
-        <article class="card">
-          <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2607.28609" target="_blank" rel="noopener">OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models</a></h2>
-          <p class="authors">Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang et al.</p>
-          <p class="summary">Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotat...</p>
-          <div class="meta">score: 5.0 · 2026-07-30</div>
+          <div class="badge">arXiv · cs.LG</div>
+          <h2><a href="https://arxiv.org/abs/2608.14498v1" target="_blank" rel="noopener">Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training</a></h2>
+          <p class="authors">Hanfeng Lu, Tianyu Feng, Suyi Li, Yuheng Zhao et al.</p>
+          <p class="summary">Vision-language models (VLMs) enable embodied agents to reason and act from visual observations and language instructions. Reinforcement learning (RL) post-training enhances these capabilities using task feedback, but current on-policy RL runtimes execute rollout, reference scoring, and actor training in strict serial ...</p>
+          <div class="meta">score: 5 · 2026-08-14</div>
         </article>
         <article class="card">
           <div class="badge">arXiv · cs.AI</div>
-          <h2><a href="https://arxiv.org/abs/2608.07460v1" target="_blank" rel="noopener">CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity</a></h2>
-          <p class="authors">Ananya Sahu, Mohit Bansal, Elias Stengel-Eskin</p>
-          <p class="summary">While post-training improves the capabilities of large language models (LLMs), it generally lowers their output diversity and creativity, negatively impacting tasks that explicitly require creativity (e.g., story generation) as well as those that require it implicitly, e.g., reinforcement learning (RL). We instead prop...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.07435v1" target="_blank" rel="noopener">SABRE: Scalable and Automated Benchmarking of VLMs under Stress</a></h2>
-          <p class="authors">Zixuan Lan, Luzhe Sun, Matthew R. Walter, Jiawei Zhou</p>
-          <p class="summary">Vision-language models (VLMs) are improving rapidly, but benchmark development lags behind, making weaknesses hard to identify. Building stress tests is costly: samples must satisfy controlled conditions, remain answerable, and challenge current models. We present SABRE, a scalable, automated pipeline that converts a T...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.07361v1" target="_blank" rel="noopener">Depth-Wise Probing and Pruning of the Planning Token in a Driving Vision-Language-Action Model</a></h2>
-          <p class="authors">Harisankar Babu, Benjamin Coors, Christopher Lang, Hendrik Berkemeyer et al.</p>
-          <p class="summary">Vision-language-action (VLA) models route driving decisions through a deep language model, but it is unclear how much of that depth the action itself requires. We study a representative driving VLA whose entire plan is carried by a single planning token that a generative planner decodes into a trajectory. Borrowing the...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.07302v1" target="_blank" rel="noopener">Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination</a></h2>
-          <p class="authors">Zichuan Wang, Songlin Yang, Bo Peng, Zhenchen Tang et al.</p>
-          <p class="summary">Large Vision-Language Models (LVLMs) often suffer from object hallucination, generating objects that are absent from the image. Prior work largely attributes this to insufficient visual attention. However, we find that both real and hallucinated objects receive equally strong visual attention in the model's mid-to-late...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
+          <h2><a href="https://arxiv.org/abs/2608.14179v1" target="_blank" rel="noopener">Can Language Models Understand mmWave Data? Benchmarking Large Language Models for mmWave Radar-Based Human Understanding</a></h2>
+          <p class="authors">Jeongwan Shin, Jaehyeon Kim, Donguk Ko, Jaeho Choi</p>
+          <p class="summary">Large language models (LLMs) have shown remarkable reasoning and generative capabilities, motivating their use as universal reasoning engines for perception. While modern approaches such as vision-language models (VLMs) have attempted to incorporate reasoning capabilities into visual sensing, the integration of LLMs wi...</p>
+          <div class="meta">score: 5 · 2026-08-14</div>
         </article>
         <article class="card">
           <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.07154v1" target="_blank" rel="noopener">Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation</a></h2>
-          <p class="authors">Yang Shen, Chonghao Cheng, Ziyi Zhao, Jialuo Zhu et al.</p>
-          <p class="summary">Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built ...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.07141v1" target="_blank" rel="noopener">Human-AI Perceptual Alignment by Playing Hues and Cues</a></h2>
-          <p class="authors">Nuria Alabau-Bosque, Jorge Vila-Tomás, Paula Daudén-Oliver, Pablo Hernández-Cámara et al.</p>
-          <p class="summary">Evaluating the perceptual alignment between Contrastive Vision-Language Models (CVLMs) and humans is typically constrained by traditional benchmarks that overlook fine-grained semantic and cultural nuances. In this work, we propose a novel evaluation framework that leverages the gamified, discrete color space of the bo...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
+          <h2><a href="https://arxiv.org/abs/2608.13395v1" target="_blank" rel="noopener">FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving</a></h2>
+          <p class="authors">Hao Dou</p>
+          <p class="summary">Reinforcement learning improves autonomous-driving vision-language-action (VLA) models by evaluating trajectories sampled from the current policy. Group relative policy optimization (GRPO) learns from reward differences within each rollout group. When all sampled trajectories are poor, this relative signal can rank fai...</p>
+          <div class="meta">score: 5 · 2026-08-13</div>
         </article>
         <article class="card">
           <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.06965v1" target="_blank" rel="noopener">Cross-View Action Consistency for Camera-Robust Vision-Language-Action Policies</a></h2>
-          <p class="authors">Bingqi Huang, Bingchuan Wei, Xuan Wang, Yingkai Cai et al.</p>
-          <p class="summary">Vision-language-action (VLA) policies fine-tuned from a fixed scene camera can fail when the camera is moved, even when the task, objects, language, and robot state are unchanged. We study scene-camera viewpoint robustness using only a scene RGB image, language, and proprioception, without camera labels, extrinsics, de...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.06913v1" target="_blank" rel="noopener">MuST-VAD: Mutual Structured Learning for Video Anomaly Detection</a></h2>
-          <p class="authors">Satoshi Hashimoto, Hitoshi Nishimura, Mori Kurokawa</p>
-          <p class="summary">In this paper, we propose MuST-VAD, a mutual structured learning framework for weakly supervised video anomaly detection (VAD) in which an anomaly detector and a large vision-language model (LVLM) exchange their acquired knowledge. Detectors in weakly supervised VAD learn anomaly scores from features extracted by a fix...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.CV</div>
-          <h2><a href="https://arxiv.org/abs/2608.06876v1" target="_blank" rel="noopener">FedVAR: Prototype-Aligned Federated Framework for Video Anomaly Recognition</a></h2>
-          <p class="authors">Ghani Haider, Majid Kundroo, Boyun Eom, Dong Hwan Park et al.</p>
-          <p class="summary">In the era of Industrial Internet of Things (IIoT) and Cyber-Physical Systems (CPS), Federated Learning (FL) offers a promising decentralized intelligence paradigm for Video Anomaly Recognition (VAR). This task is vital for maintaining high-fidelity Digital Twins and ensuring safety in mission-critical environments. Ho...</p>
-          <div class="meta">score: 4 · 2026-08-07</div>
+          <h2><a href="https://arxiv.org/abs/2608.13026v1" target="_blank" rel="noopener">Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning</a></h2>
+          <p class="authors">Yao Zhou, Hang Gao, Fengge Wu, Changwen Zheng et al.</p>
+          <p class="summary">Outcome-driven reinforcement learning offers a scalable way to post-train vision-language-action (VLA) policies from sparse task-success feedback. In common GRPO-based VLA post-training, one rollout-level advantage is applied to every action in the trajectory. A rollout that completes several valid stages but fails lat...</p>
+          <div class="meta">score: 5 · 2026-08-13</div>
         </article>
         <article class="card">
           <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.06210v1" target="_blank" rel="noopener">VIDP: Variable Impedance Diffusion Policy for Compliant Robot Manipulation from Diverse Demonstrations</a></h2>
-          <p class="authors">Hisham Khalil, Neil Fernandes, Thomas M. Kwok, Hsiu-Chin Lin et al.</p>
-          <p class="summary">Contact-rich manipulation requires precise tracking and mechanical compliance, where variable impedance control can improve robustness in task success, whereas static compliance cannot adapt to varying contact constraints. Variable impedance skills can be learned from demonstrations, avoiding complex modeling, but comp...</p>
-          <div class="meta">score: 4 · 2026-08-06</div>
+          <h2><a href="https://arxiv.org/abs/2608.12063v1" target="_blank" rel="noopener">Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL</a></h2>
+          <p class="authors">Martin Schuck, Maks Sorokin, Simone Manni, Duy Ta et al.</p>
+          <p class="summary">Integrating locomotion and manipulation is essential for robot autonomy, but scaling standard Reinforcement Learning (RL) to complex tasks is severely bottlenecked by the slow, manual process of dense reward shaping. To bypass this limitation, we leverage Sample-based Model Predictive Control (SMPC) entirely in simulat...</p>
+          <div class="meta">score: 5 · 2026-08-12</div>
         </article>
         <article class="card">
           <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.06154v1" target="_blank" rel="noopener">Visual Grounding in Zero-Shot Vision-Language Control</a></h2>
-          <p class="authors">J. de Curtò, Dayani Plasencia, Diego Sánchez, I. de Zarzà</p>
-          <p class="summary">Vision-language models (VLMs) are increasingly used as zero-shot controllers, but successful trajectories do not necessarily show that decisions are grounded in visual input: simulator dynamics and conservative action priors can produce favourable scores without meaningful perception. We investigate this with an input-...</p>
-          <div class="meta">score: 4 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05989v1" target="_blank" rel="noopener">Observation-Grounded Self-Predictive Reinforcement Learning for Visual Continuous Control</a></h2>
-          <p class="authors">Xinwei Liu, Junyuan Liang, Jianting Zhang, Wuhui Chen</p>
-          <p class="summary">Sample-efficient policy learning from pixels is a long-standing challenge in reinforcement learning (RL). Recent dynamics-based representation learning methods have significantly improved the sample efficiency of model-free visual RL by learning dynamics-aware representations through auxiliary prediction performed eith...</p>
-          <div class="meta">score: 4 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05738v1" target="_blank" rel="noopener">In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use</a></h2>
-          <p class="authors">Jiarui Yang, Wen Huang, Jiale Zhang, Maowei Hu et al.</p>
-          <p class="summary">Vision-Language-Action (VLA) models have become the dominant recipe for generalist manipulation, yet they are almost universally trained by behavior cloning: a policy imitates expert action chunks conditioned on a static image and a fixed instruction. A natural remedy is to inject explicit reasoning through textual cha...</p>
-          <div class="meta">score: 4 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.05715v1" target="_blank" rel="noopener">Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots</a></h2>
-          <p class="authors">S. M . Bhagya P. Samarakoon, M. A. Viraj J. Muthugala, W. K. R. Sachinthana, Mohan Rajesh Elara</p>
-          <p class="summary">Vision-Language Models (VLMs) are increasingly deployed as planners in robotic systems, where they translate natural-language commands into executable actions grounded in visual scene understanding. This tight coupling between perception and instruction-following introduces a new attack surface: adversarial text placed...</p>
-          <div class="meta">score: 4 · 2026-08-06</div>
-        </article>
-        <article class="card">
-          <div class="badge">arXiv · cs.RO</div>
-          <h2><a href="https://arxiv.org/abs/2608.06434v1" target="_blank" rel="noopener">Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection</a></h2>
-          <p class="authors">Yuewei Sun, Lang Qin, Zechuan Tian, Jingwen Li et al.</p>
-          <p class="summary">Embodied intelligence demands both long-horizon reasoning and real-time closed-loop responsiveness. Recent dual-system Vision-Language-Action (VLA) architectures combine fast reactive control with slow deliberative reasoning to balance inference speed and task success rate. However, existing dual-process VLAs tightly c...</p>
-          <div class="meta">score: 4 · 2026-08-06</div>
+          <h2><a href="https://arxiv.org/abs/2608.11350v1" target="_blank" rel="noopener">Self-Evolving Embodied Agents via Skill-Harness Evolution</a></h2>
+          <p class="authors">Peidong Wang, Zhiming Ma, Ying Chang, Xufang Luo et al.</p>
+          <p class="summary">Embodied agents are increasingly built as systems around foundation models, where performance depends not only on model weights but also on the skills, context, action interfaces, and execution harness surrounding the model. While supervised fine-tuning and reinforcement learning can adapt agents to new environments, t...</p>
+          <div class="meta">score: 5 · 2026-08-11</div>
         </article>
         <article class="card">
           <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.06485" target="_blank" rel="noopener">Do AI Personas Grow? Analyzing and Benchmarking Personality Evolution in LLM Agents After Life Events</a></h2>
-          <p class="authors">Ming Wang, Peidong Wang, Xiaocui Yang, Daling Wang et al.</p>
-          <p class="summary">Personality-conditioned LLM agents (PC-Agents) are increasingly used in emotional support, social simulation, and role-playing, motivating the development of lifelong agents that remain coherent over extended interactions. A key component of such coherence is personality evolution: agents should undergo plausible, psyc...</p>
-          <div class="meta">score: 4.0 · 2026-08-06</div>
+          <h2><a href="https://huggingface.co/papers/2608.09805" target="_blank" rel="noopener">Parameter Exploration for RLVR via Variational Learning</a></h2>
+          <p class="authors">Vatsal Venkatkrishna, Nico Daheim, Iryna Gurevych</p>
+          <p class="summary">Exploration has been a focus of reinforcement learning research for a long time. Recently, there has been growing evidence that it is also an important ingredient in LLM reinforcement learning recipes that can significantly impact downstream performance. Many existing methods control exploration in the action-space, fo...</p>
+          <div class="meta">score: 5.0 · 2026-08-10</div>
         </article>
         <article class="card">
           <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.05747" target="_blank" rel="noopener">GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?</a></h2>
-          <p class="authors">Qifeng Zhang, Kaixiang Huang, Heng Dong, Huang Fang et al.</p>
-          <p class="summary">Spatial intelligence is fundamental to embodied agents, yet existing benchmarks focus on local spatial perception from single or few viewpoints, overlooking global spatial awareness over continuous, long-horizon visual streams. To address this limitation, we introduce the Global-Spatial-Temporal Benchmark (GST-Bench), ...</p>
-          <div class="meta">score: 4.0 · 2026-08-06</div>
+          <h2><a href="https://huggingface.co/papers/2608.08606" target="_blank" rel="noopener">Mitigating Gender Bias in English to Romanian Machine Translation</a></h2>
+          <p class="authors">Ioana Grigore, Sergiu Nisioi</p>
+          <p class="summary">Machine translation (MT) systems often fail to correctly translate gender, especially when converting from a gender-neutral language like English to a gendered target language such as Romanian. This bias results in translations that default to masculine forms or reinforce gender stereotypes. We propose a hybrid pipelin...</p>
+          <div class="meta">score: 5.0 · 2026-08-09</div>
         </article>
         <article class="card">
           <div class="badge">🤗 HF</div>
-          <h2><a href="https://huggingface.co/papers/2608.06197" target="_blank" rel="noopener">EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning</a></h2>
-          <p class="authors">Zishan Xu, Zhiyuan Yao, Yuxin Chen, Yifu Guo et al.</p>
-          <p class="summary">Training large language model agents for long-horizon tool use typically relies on interactions with real or synthesized executable environments, whose construction and verification are costly, or on external simulators that are difficult to ground. We introduce EnvACE, an agentic reinforcement learning method that rep...</p>
-          <div class="meta">score: 4.0 · 2026-08-06</div>
+          <h2><a href="https://huggingface.co/papers/2608.08477" target="_blank" rel="noopener">VectraYX-Vision-1B: A Sub-2B Spanish/LATAM Cybersecurity Vision-Language Model with Structured Visual Reasoning and Native Tool Use</a></h2>
+          <p class="authors">Juan S. Santillana</p>
+          <p class="summary">We present VectraYX-Vision-1B, a sub-2B vision-language model (VLM) for Spanish/LATAM cybersecurity imagery, coupling a frozen SigLIP-so400m encoder to a 1.04B Spanish/LATAM security decoder via an MLP. To our knowledge, it is the first sub-2B VLM specialized for cyber UI (IDA, Ghidra, Wireshark, Nmap, Metasploit, Vola...</p>
+          <div class="meta">score: 5.0 · 2026-08-09</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.08021" target="_blank" rel="noopener">Evidence-RL: Towards Evidence-intensive Visual Reasoning</a></h2>
+          <p class="authors">Haojie Huang, Xinlei Yu, Chengming Xu, Zhangquan Chen et al.</p>
+          <p class="summary">Vision-Language Models (VLMs) should answer from concrete image evidence rather than language priors, dataset shortcuts, or irrelevant visual context. Existing perception-aware post-training methods encourage image use through global perturbations or attention proxies, but they do not test whether a sampled answer caus...</p>
+          <div class="meta">score: 5.0 · 2026-08-08</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.CV</div>
+          <h2><a href="https://arxiv.org/abs/2608.14403v1" target="_blank" rel="noopener">CRAFT: Constrained Reward via Attention Fine-Tuning for Subject Personalization without Composed Targets</a></h2>
+          <p class="authors">Jihun Park, Kyoungmin Lee, Jongmin Gim, Hyeonseo Jo et al.</p>
+          <p class="summary">Subject-driven image personalization---generating new images that preserve the identity of one or several reference subjects in novel scenes---is a foundational capability for modern visual content creation. It is currently dominated by generalized methods that fine-tune a pretrained multimodal diffusion transformer (M...</p>
+          <div class="meta">score: 4 · 2026-08-14</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.14379v1" target="_blank" rel="noopener">Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation</a></h2>
+          <p class="authors">Yuxuan Chen, Wanruo Zhang, Xiao Li</p>
+          <p class="summary">Vision-Language-Action (VLA) models have recently achieved promising performance in robotic manipulation. However, existing benchmarks mainly evaluate generalization on static manipulation tasks and largely overlook dynamic interaction scenarios. To address this gap, we present ReflexBench, a benchmark for reaction-cri...</p>
+          <div class="meta">score: 4 · 2026-08-14</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.CV</div>
+          <h2><a href="https://arxiv.org/abs/2608.14024v1" target="_blank" rel="noopener">SSP: An Event-Matched Syn2Sim2Phy Cross-Domain Evaluation Framework for Autonomous Driving VLA Models</a></h2>
+          <p class="authors">Haojie Feng, Peizhi Zhang, Xinrui Zhang, Zhuoren Li et al.</p>
+          <p class="summary">Vision-language-action (VLA) models for autonomous driving jointly produce scene interpretation, language-based reasoning, and driving trajectories. Existing evaluations often use independently selected synthetic, simulated, and physical data, so measured performance gaps can be confounded by changes in scenario conten...</p>
+          <div class="meta">score: 4 · 2026-08-14</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.CV</div>
+          <h2><a href="https://arxiv.org/abs/2608.14016v1" target="_blank" rel="noopener">Content Based Video Narration of Gameplay with Vision Language Models</a></h2>
+          <p class="authors">Mathew Varghese</p>
+          <p class="summary">Live game commentary is scarce: it exists for professional esports broadcasts and almost nowhere else. We present a content-based video narration system that produces spoken, esports-style commentary for arbitrary gameplay recordings using a general-purpose vision-language model (VLM) and a text-to-speech back end, wit...</p>
+          <div class="meta">score: 4 · 2026-08-14</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.CV</div>
+          <h2><a href="https://arxiv.org/abs/2608.13973v1" target="_blank" rel="noopener">Rethinking Auxiliary Modalities in Multimodal Zero-shot Anomaly Detection: From Semantic Fusion to Conditional Modulation</a></h2>
+          <p class="authors">Peng Wu, Xin Ge, Yujia Sun, Guansong Pang</p>
+          <p class="summary">Recent foundation model-based methods have endowed RGB images with strong zero-shot anomaly detection (ZSAD) through vision-language pretraining. However, RGB observations alone remain limited in perceiving anomalies dominated by geometric deformation, depth variation, or subtle surface changes. Auxiliary modalities ca...</p>
+          <div class="meta">score: 4 · 2026-08-14</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.CV</div>
+          <h2><a href="https://arxiv.org/abs/2608.13791v1" target="_blank" rel="noopener">VLM- and LLM-Driven Multi-Agent System for PET Image Denoising</a></h2>
+          <p class="authors">Boxiao Yu, Savas Ozdemir, Yang Xing, Fumio Hashimoto et al.</p>
+          <p class="summary">Positron emission tomography (PET) imaging suffers from limited spatial resolution and low signal-to-noise ratio, which can compromise quantitative accuracy and lesion detectability. Deep learning-based denoising methods have demonstrated strong potential for improving PET image quality. However, their practical deploy...</p>
+          <div class="meta">score: 4 · 2026-08-13</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.13474v1" target="_blank" rel="noopener">Decoding Task Progress from VLA Representations</a></h2>
+          <p class="authors">Atiksh Bhardwaj, Edward Weiyi Duan, Prithwish Dan, Wei-Chiu Ma et al.</p>
+          <p class="summary">Vision-language-action models (VLAs) are moving rapidly towards deployment as general-purpose manipulation policies, but we currently lack basic tools for understanding what these models represent internally or for monitoring them at runtime. Leveraging ideas from mechanistic interpretability, we probe the residual str...</p>
+          <div class="meta">score: 4 · 2026-08-13</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.CV</div>
+          <h2><a href="https://arxiv.org/abs/2608.13463v1" target="_blank" rel="noopener">MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification</a></h2>
+          <p class="authors">Daniel Perkins, John Squires, Janou Milligan, Chandra Raskoti et al.</p>
+          <p class="summary">Modern image classification models excel when trained on single task-specific datasets but often struggle to generalize across domains and difficulty levels. We propose ARMDIL, an Adaptive Router for Multi-Domain Image classification with LLMs. ARMDIL is an ensemble that uses a multimodal large language model (MLLM) ag...</p>
+          <div class="meta">score: 4 · 2026-08-13</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.12854v1" target="_blank" rel="noopener">BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving</a></h2>
+          <p class="authors">Bing Zhan, Shuyao Shang, Jiahao Gu, Shuo Lu et al.</p>
+          <p class="summary">Autonomous driving requires planning under both semantic constraints and predictive dynamics. Existing end-to-end driving approaches, however, typically emphasize only one side of this requirement: Vision-Language-Action (VLA) models exploit VLM priors for semantic reasoning, while World Action Models (WAMs) provide fu...</p>
+          <div class="meta">score: 4 · 2026-08-13</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.12773" target="_blank" rel="noopener">CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers</a></h2>
+          <p class="authors">Ebenezer Tarubinga</p>
+          <p class="summary">Semi-supervised semantic segmentation has long turned on one question, which pseudo-labels to trust, and a generation of selection rules, dynamic thresholds, per-class curricula, soft confidence weights, answered it for the noisy, under-confident ResNet teachers of their day. Self-supervised foundation encoders change ...</p>
+          <div class="meta">score: 4.0 · 2026-08-13</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.12122v1" target="_blank" rel="noopener">HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing</a></h2>
+          <p class="authors">Zhenjie Yang, Xingyu Jiao, Guopeng Zhong, Shuzhe Yang et al.</p>
+          <p class="summary">Robotic manipulation with dexterous hands is a cornerstone of Embodied AI, yet its progress is stifled by the high cost of collecting embodiment-aware teleoperation data. While abundant egocentric videos of human hands offer a scalable alternative, the profound discrepancies in appearance, articulation, and camera view...</p>
+          <div class="meta">score: 4 · 2026-08-12</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.11564v1" target="_blank" rel="noopener">Repurposing RGB-based Foundation Model for Depth Estimation on Thermal Images Using Hierarchical Supervision</a></h2>
+          <p class="authors">Jie Hong, Tingtian Li, Xuesong Li, Xiao Li</p>
+          <p class="summary">Depth estimation from thermal images is highly valuable for robotic applications in adverse conditions, such as nighttime and rainy weather. Recent studies have sought to transfer knowledge from RGB-based foundation models to thermal modalities, yet the rich hierarchical representations these models encode remain under...</p>
+          <div class="meta">score: 4 · 2026-08-12</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.11994" target="_blank" rel="noopener">Claim-Level Reliability Assessment for Efficient Test-Time Reasoning</a></h2>
+          <p class="authors">Sen Xu, Wei Wang, Shixi Liu, Jixin Min et al.</p>
+          <p class="summary">We propose claim-level falsification as a principle for test-time scaling and instantiate it through Claim-Level Reliability Assessment (CLR), a training-free framework that reallocates test-time compute from additional solution sampling to targeted verification. Since whole-trace evaluation often obscures decisive err...</p>
+          <div class="meta">score: 4.0 · 2026-08-12</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.11660" target="_blank" rel="noopener">Hybrid-Policy Self-Editing for Composable Unstructured Knowledge Editing</a></h2>
+          <p class="authors">Tianci Liu, Zihan Dong, Tianchun Li, Yi-Chung Chen et al.</p>
+          <p class="summary">Large language models (LLMs) achieve remarkable performance across natural language tasks, yet they are trained on static corpora and their knowledge quickly becomes outdated in a fast-changing world. This motivates knowledge editing (KE), which updates specific knowledge in an LLM without changing unrelated others. Re...</p>
+          <div class="meta">score: 4.0 · 2026-08-12</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.11616" target="_blank" rel="noopener">MBA: Multimodal Benchmark and Agents for Real-World Business Ideation</a></h2>
+          <p class="authors">Hojun Choi, Jaeyo Shin, Suin Lee, Hyunjung Shim</p>
+          <p class="summary">Agentic systems powered by large language models (LLMs) have opened new opportunities for business ideation. Yet existing approaches remain confined to a text-only paradigm, despite the inherently multimodal nature of real-world contexts. We thus introduce MBA-Bench, the first multimodal benchmark for training and eval...</p>
+          <div class="meta">score: 4.0 · 2026-08-12</div>
+        </article>
+        <article class="card">
+          <div class="badge">arXiv · cs.RO</div>
+          <h2><a href="https://arxiv.org/abs/2608.10860v2" target="_blank" rel="noopener">Flex-$π$: A Multi-Stream World-Action Model with Compute Flexibility</a></h2>
+          <p class="authors">Ge Yan, Jinghao Liu, Yuzhi Fan, Lei Cai et al.</p>
+          <p class="summary">World-action models (WAMs) predict the future to act better, but nearly all of them predict only RGB latents, trained purely for pixel reconstruction, with no explicit signal for the 3D geometry or object semantics manipulation needs. We find a surprising free lunch: the same frozen video-generation VAE that encodes RG...</p>
+          <div class="meta">score: 4 · 2026-08-11</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.10708" target="_blank" rel="noopener">Self-Geometry: GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models</a></h2>
+          <p class="authors">Seokhyun Youn, Dahyeon Kye, Sung-Ho Bae, Jihyong Oh</p>
+          <p class="summary">Recent Vision Foundation Models (VFMs) predict depth, camera pose, and pointmap in a single forward pass without per-scene optimization, achieving strong generalization. However, enforcing explicit multi-view geometric consistency, e.g., through bundle adjustment, is computationally costly and is thus not imposed durin...</p>
+          <div class="meta">score: 4.0 · 2026-08-11</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.11274" target="_blank" rel="noopener">Agent Safety Should Be a Runtime Contract</a></h2>
+          <p class="authors">Albus W. Ng, Yi Han, Jusheng Zhang, Wenhao Wang</p>
+          <p class="summary">The dominant paradigm treats AI safety as a property to be instilled during model training via RLHF, DPO, or Constitutional AI. We argue this is structurally insufficient for autonomous agents that execute code, mutate files, send messages, and modify databases. Agent safety should be a runtime contract enforced by the...</p>
+          <div class="meta">score: 4.0 · 2026-08-11</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.11045" target="_blank" rel="noopener">ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization</a></h2>
+          <p class="authors">He-Yen Hsieh, H. T. Kung</p>
+          <p class="summary">ReRound (Reconstructive Rounding) is a post-training quantization method that addresses the midpoint ambiguity inherent in standard round-to-nearest (RTN) schemes when quantizing weights near the centers of quantization intervals.
+  Starting from a pretrained LLM, ReRound trains a conditional diffusion model to produce...</p>
+          <div class="meta">score: 4.0 · 2026-08-11</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.10744" target="_blank" rel="noopener">Beyond Pixels: From Video Priors to 4D Worlds</a></h2>
+          <p class="authors">Zihao Liu, Xiaolong Shen, Zhenglin Zhou, Ruijie Quan et al.</p>
+          <p class="summary">4D generation synthesizes dynamic 3D scenes from conditions such as text or images. Existing methods either reconstruct generated RGB videos with a separate 4D model or adapt a particular video generator to predict geometry directly. The former suffers from distribution mismatch and error propagation, whereas the latte...</p>
+          <div class="meta">score: 4.0 · 2026-08-11</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.10692" target="_blank" rel="noopener">SPIEval: Evaluating Large Language Models as Mobile Assistants over Scattered Personal Information</a></h2>
+          <p class="authors">Junjie Ye, Zhuohui Sheng, Shaofan Liu, Yulun Zhu et al.</p>
+          <p class="summary">Large language models (LLMs) are increasingly deployed as mobile assistants, where a key challenge is leveraging personal information scattered across multiple applications (apps) to complete user instructions. However, due to the lack of dedicated benchmarks, their capabilities remain poorly understood. To address thi...</p>
+          <div class="meta">score: 4.0 · 2026-08-11</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.10288" target="_blank" rel="noopener">Power law graph attention: exact generalization of scaled dot-product attention, empirical collapse at inference</a></h2>
+          <p class="authors">Burc Gokden</p>
+          <p class="summary">The Large Language Model from Power Law Decoder Representations (PLDR-LLM) and its attention, Power Law Graph Attention (PLGA), replace the fixed bilinear form of scaled dot-product attention (SDPA) with a learned, input-generated bilinear operator G_{LM}, built from a positive tensor A_{LM} by elementwise power laws. ...</p>
+          <div class="meta">score: 4.0 · 2026-08-10</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.09867" target="_blank" rel="noopener">Stealing Reasoning Traces from Proprietary LLM APIs</a></h2>
+          <p class="authors">Alexander Panfilov, David Schmotz, Ilia Shumailov, Luca Beurer-Kellner et al.</p>
+          <p class="summary">Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with e...</p>
+          <div class="meta">score: 4.0 · 2026-08-10</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.02508" target="_blank" rel="noopener">RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States</a></h2>
+          <p class="authors">Yi Yang, Zhennan Chen, Yihong Zhuang, Tiehan Fan et al.</p>
+          <p class="summary">Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges. First, trajectory-indexed utilities grow with the interaction history, thereby dispersing limited feedback over an ever-expanding state space. Second, because trajectory-level rewards are jointly assigned to co-retrieved mem...</p>
+          <div class="meta">score: 4.0 · 2026-08-10</div>
+        </article>
+        <article class="card">
+          <div class="badge">🤗 HF</div>
+          <h2><a href="https://huggingface.co/papers/2608.09420" target="_blank" rel="noopener">Intent Speaks Louder: Controllable User Simulation Beyond Response Imitation</a></h2>
+          <p class="authors">Bo Wang, Ruixing Zhang, Yunqi Liu, Yang Zhang et al.</p>
+          <p class="summary">User simulators are widely used as scalable environments for training and evaluating interactive assistants. Generating the next user turn is inherently one-to-many: the same profile and dialogue context may support multiple plausible continuations with different local interaction intents. A fluent response may therefo...</p>
+          <div class="meta">score: 4.0 · 2026-08-10</div>
         </article>
   </div>
   <script>
